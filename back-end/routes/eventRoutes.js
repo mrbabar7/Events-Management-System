@@ -1,0 +1,15 @@
+const express = require("express");
+const eventRoutes = express.Router();
+const eventControl = require("../controllers/eventController");
+const postControl = require("../controllers/postController");
+eventRoutes.post("/event", postControl.postEvent);
+eventRoutes.put("/update-event", postControl.updateEvent);
+eventRoutes.post("/delete-event", eventControl.deleteEvent);
+eventRoutes.post("/apply-event", eventControl.postApplyEvent);
+eventRoutes.get("/apply-event", eventControl.getApplyEvents);
+eventRoutes.get("/fetch-event", eventControl.fetchEvents);
+eventRoutes.get("/fetch-myevent", eventControl.fetchMyEvents);
+eventRoutes.get("/event-details/:eventId", eventControl.fetchEventDetails);
+eventRoutes.post("/post-app-status", eventControl.postAppStatus);
+eventRoutes.post("/unapply-event", eventControl.postUnapplyEvent);
+exports.eventRoutes = eventRoutes;
