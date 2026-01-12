@@ -13,14 +13,14 @@ const LandingPage = () => {
   return (
     <div className="bg-blue-200 min-h-screen">
       <Professional
-        className={`flex items-center justify-center h-screen py-[5%]`}
+        className={`flex items-center justify-center h-screen py-[5%] px-[2%]`}
       >
         <div
-          className="bg-white rounded-2xl md:px-10 px-6 py-4 shadow-lg shadow-indigo-600 flex flex-col md:flex-row
-         items-center gap-6 h-full overflow-clip"
+          className="bg-white rounded-2xl md:px-10 px-4 py-4  shadow-lg shadow-indigo-600 flex flex-col-reverse md:flex-row
+         items-center  md:gap-6 gap-0 h-full overflow-clip"
         >
           <div className="flex-1 text-center md:text-left">
-            <h2 className="md:text-4xl lg:text-5xl text-3xl font-extrabold text-gray-900 leading-tight">
+            <h2 className="md:text-4xl lg:text-5xl text-2xl font-extrabold text-gray-900 leading-tight">
               Welcome to
               <br />
               <span className="text-indigo-600 md:hidden flex justify-center text-center tracking-wider">
@@ -32,9 +32,13 @@ const LandingPage = () => {
                 Event Management System
               </span>
             </h2>
-            <p className="mt-4 text-gray-700 text-lg md:text-xl">
-              Organize, discover, and register for events effortlessly. Create
-              memorable experiences and manage attendees with confidence.
+            <p className="mt-4 text-gray-700 md:text-xl text-md">
+              Organize, discover, and register for events effortlessly.
+              <span className="hidden md:flex">
+                {" "}
+                Create memorable experiences and manage attendees with
+                confidence.
+              </span>
             </p>
 
             <div className="md:mt-8 mt-6 flex flex-col sm:flex-row md:gap-6  gap-4 items-center justify-center md:justify-start">
@@ -60,11 +64,11 @@ const LandingPage = () => {
             </div>
           </div>
 
-          <div className="flex-1">
+          <div className="flex-1 flex justify-center items-center">
             <img
               src="../src/assets/ems-blur.png"
               alt="EMS"
-              className="w-full"
+              className="w-full "
             />
           </div>
         </div>

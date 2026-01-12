@@ -190,7 +190,7 @@ export default function EventDetails() {
           {/* Main content area */}
           <div className="max-w-5xl mx-auto px-6 py-10 space-y-8">
             {/* Title + Action Buttons */}
-            <div className="flex justify-between items-start gap-6">
+            <div className="flex flex-col md:flex-row justify-between items-start gap-6">
               <div>
                 {isEditing ? (
                   <div className="mb-2">

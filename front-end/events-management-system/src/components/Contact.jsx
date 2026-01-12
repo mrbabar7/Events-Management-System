@@ -12,7 +12,7 @@ const Contact = () => {
           you! Fill out the form below and our team will get in touch shortly.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 overflow-hidden">
           {/* Left Side - Info Section */}
           <div className="flex flex-col justify-center bg-white shadow-lg rounded-2xl p-8 hover:shadow-2xl transition-all duration-300">
             <h3 className="text-2xl font-semibold text-blue-600 mb-4">
